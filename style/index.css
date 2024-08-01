@@ -1,0 +1,58 @@
+
+/* decodivicador*/
+
+.decodificador{ 
+    display: flex;
+    justify-content:center;
+    border: solid 4px black;
+}
+
+
+/* label do text area*/
+.texte__codificado{
+    border: solid 4px green;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 944px;
+}
+.texte__codificado_area{
+   
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+
+}
+.texte__codificado_area__label{
+    border: solid 4px red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-size: 16px;
+    color: #666;
+}
+
+.texte__codificado_area__label:focus + .texte__codificado_area,
+.texte__codificado_area__label:not(:placeholder-shown) + .texte__codificado_area{
+    top: -20px;
+    left: 10px;
+
+}
+
+
+
+/* entrada de texto para decodificar e botões de açoes*/
+
+.text__codificar{
+    border: solid 4px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 944px;
+    width: 35%;
+
+}
