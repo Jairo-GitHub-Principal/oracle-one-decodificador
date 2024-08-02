@@ -1,58 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
 /* decodivicador*/
 
-.decodificador{ 
+.container__decodificador {
+    background: #F3F5FC;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     border: solid 4px black;
+    max-width: 1440px;
+    max-height: 1024px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+.container__decodificador__img__topo {/* posiciona o "a" na parte superios da tala do lado esquerdo*/
+    width: Hug (120px)px;
+    height: Hug (48px)px;
+    margin-top: 40px;
+    opacity: 0px;
+    position: relative;
+    top: -30px;
+    left: -80px;
+
+
 }
 
 
 /* label do text area*/
-.texte__codificado{
-    border: solid 4px green;
+.container__input__text__button {
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     position: relative;
-    width: 100%;
-    max-width: 400px;
+    width: 680px;
     height: 944px;
 }
-.texte__codificado_area{
-   
+
+.container__input__text {
+    height: 60px;
+    margin-top: 168px;
+    display: flex;
+    box-sizing: border-box;
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+
+
+
+
+}
+
+.input__codificador {
+    border: none;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    width: 680px;
+    height: 48px;
+    opacity: 0px;
+    border-radius: 23px;
+    opacity: 0.7;
+
+
+
+
+
+}
+
+.container__button {
+    height: 67px;
+    width: 100%;
+    display: flex;
+    gap: 24px;
+
+
+}
+
+.button__criptografar {
+    width: 50%;
+    border-radius: 25px;
+    Color: "Dark blue";
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    cursor:pointer;
+    
+}
+
+
+.button__decriptografar {
+    width: 50%;
+    border-radius: 25px;
+    Color: "Dark blue";
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    cursor:pointer;
+
+}
+
+
+.container__decodificado {
+    border-radius: 32px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 944px;
+    margin-left: 80px;
+    display: flex;
     box-sizing: border-box;
 
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+
+
 
 }
-.texte__codificado_area__label{
-    border: solid 4px red;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    pointer-events: none;
-    transition: 0.2s ease all;
+
+.container__img__text_info {
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.container__text__info {
+    max-height: 122px;
+    max-width: 336px;
+}
+
+.container__text__info .text_enfhasis {
+    width: 336px;
+    height: 58px;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.container__text__info .text_smaller {
+    width: 336px;
+    height: 48px;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
-    color: #666;
-}
-
-.texte__codificado_area__label:focus + .texte__codificado_area,
-.texte__codificado_area__label:not(:placeholder-shown) + .texte__codificado_area{
-    top: -20px;
-    left: 10px;
+    text-align: center;
 
 }
+
 
 
 
 /* entrada de texto para decodificar e botões de açoes*/
-
-.text__codificar{
-    border: solid 4px red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 944px;
-    width: 35%;
-
-}

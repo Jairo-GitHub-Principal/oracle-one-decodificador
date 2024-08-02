@@ -13,35 +13,38 @@
 <body>
 
     <header>
-        <h1>a</h1>
     </header>
-    <main class="decodificador">
-        <section class="text__codificar">
-            <div>
-                <input type="text" id="codificar" name="codificar"
+    <main class="container__decodificador">
+        <div>
+            <img class="container__decodificador__img__topo" src="./assets/Frame 6.png" alt="">
+        </div>
+        
+        <section class="container__input__text__button">
+            <!-- elementos para onde é feito a inserção de testo 
+            para codificar e os botões para interação-->
+            <div class="container__input__text">
+                <input class="input__codificador" type="text" id="codificar" name="codificar"
                     placeholder="Digite o texto que sera criptografado" />
             </div>
-            <div>
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+            <div class="container__button">
+                <button type="button" class="button__criptografar">Criptografar</button>
+                <button type="button" class="button__decriptografar">Descriptografar</button>
 
             </div>
 
         </section>
 
-        <aside>
-            <div class="texte__codificado">
+        <aside class="container__decodificado">
+            <!-- elementos onde aparece o resultado da codificação e mensagem informativa sobre o estado de
+            da codificação -->
+            <div class="container__img__text_info">
 
-                <textarea 
-                class="texte__codificado_area" 
-                id="codificado" name="codificado" 
-                placeholder="Digite um texto que vc deseja criptografar ou decriptografar"
-                rows="30" cols="30">
+                <img src="./assets/High quality products 1 1.png" alt="imagem do elemento onde se visualiza o resultado do codificação">
+               <div class="container__text__info">
+                <p class="text_enfhasis">Nenhuma mensagem <br> encontrada</p>
+                <p class="text_smaller"> Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
 
-                </textarea>
-                <label for="codificado" class="texte__codificado_label">
-                    Digite um texto que vc deseja criptografar ou decriptografar
-                </label>
+               </div>
             </div>
         </aside>
     </main>
