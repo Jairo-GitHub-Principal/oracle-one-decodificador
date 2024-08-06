@@ -19,13 +19,14 @@ function exibirValorCapturado(text) {
 function criptografarTexto() { // pego o texto digitado pelo usuario e criptografo ele
     let textoDigitado = document.querySelector('#textoCodificar').value;
     console.log(`texto capturado pela função criptografarTexto é: ${textoDigitado}`);
-
-    let outputText = textoDigitado
+    let textoParaMinusculo = textoDigitado.toLowerCase(); // se caso o user digirar alguma letra maiuscula tudo sera passado para minuscula nessa linha
+    let outputText = textoParaMinusculo
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
         .replace(/a/g, 'ai')
         .replace(/o/g, 'ober')
         .replace(/u/g, 'ufat');
+        /** obs.: no codigo acima '.replace(/e/g,'') e assim por diante: A letra g no código .replace(/e/g, 'enter') é uma flag usada na expressão regular para indicar que a substituição deve ser feita globalmente. */
 
         
         // seleciono o botão que esta oculto para aplicar a regra de css para faze-lo aparecer na tela
