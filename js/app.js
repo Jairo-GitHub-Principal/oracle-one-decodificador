@@ -17,8 +17,11 @@ function exibirValorCapturado(text) {
 }
 
 function criptografarTexto() { // pego o texto digitado pelo usuario e criptografo ele
+    
     let textoDigitado = document.querySelector('#textoCodificar').value;
     console.log(`texto capturado pela função criptografarTexto é: ${textoDigitado}`);
+    
+    
     let textoParaMinusculo = textoDigitado.toLowerCase(); // se caso o user digirar alguma letra maiuscula tudo sera passado para minuscula nessa linha
     let outputText = textoParaMinusculo
         .replace(/e/g, 'enter')
@@ -64,6 +67,7 @@ function criptografarTexto() { // pego o texto digitado pelo usuario e criptogra
 }
 
 function deCriptografarTexto() { // pego o texto criptografado digitado ou colado pelo usuario e decriptografo ele
+   
     let textoDigitadoCriptografado = document.querySelector('#textoCodificar').value;
     console.log(`texto capturado pela função deCriptografarTexto é: ${textoDigitadoCriptografado}`);
 
@@ -73,6 +77,37 @@ function deCriptografarTexto() { // pego o texto criptografado digitado ou colad
         .replace(/ai/g, 'a')
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
+
+
+
+        /** estilizar o espaço de exibição do testo descriptografado */
+
+          // seleciono o botão que esta oculto para aplicar a regra de css para faze-lo aparecer na tela
+          let buttonCopiar = document.querySelector('.container__button_copiar');
+          buttonCopiar.style.display = 'block' // antes display:none, agora display:block e o botão aparecera na tela
+  
+          // fazer desaparecer a imagen e a msg, que informa que nenhuma msg foi encontrada
+          // assim dara espaço para a exibição do texto criptografado ou decriptografado
+  
+          let containerRemoverImgText = document.querySelector('.container_img_text');
+  
+          containerRemoverImgText.style.display = 'none';
+  
+  
+          // aplicar estilos no container que exibe o resultado, para melhorar a visualização e a leitura
+          let containerResultado = document.querySelector('.container__img__text_info');
+          containerResultado.style.justifyContent ='space-between';
+  
+          let exibirTexto = document.querySelector('.exibir__texto');
+          exibirTexto.style.paddingTop="50px";
+          exibirTexto.style.paddingLeft="8px";
+          exibirTexto.style.paddingRigth="8px";
+          
+
+
+
+
+
 
     exibirValorCapturado(outputText);
 
