@@ -15,20 +15,29 @@
     <header>
     </header>
     <main class="container__decodificador">
-        <div>
+        <div class="imgagem__topo">
             <img class="container__decodificador__img__topo" src="./assets/Frame 6.png" alt="">
         </div>
-        
+
         <section class="container__input__text__button">
             <!-- elementos para onde é feito a inserção de testo 
             para codificar e os botões para interação-->
             <div class="container__input__text">
-                <input class="input__codificador" type="text" id="codificar" name="codificar"
+                <input class="input__codificador" type="text" id="textoCodificar" name="codificar"
                     placeholder="Digite o texto que sera criptografado" />
             </div>
-            <div class="container__button">
-                <button type="button" class="button__criptografar">Criptografar</button>
-                <button type="button" class="button__decriptografar">Descriptografar</button>
+
+            <div class="container__button__text">
+                <div class="container__text">
+                    <span><img src="./assets/bi_exclamation-circle-fill.png" alt=""></span>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="container__button">
+                    <button type="button" class="button__criptografar button__animation"
+                        onclick="criptografarTexto()">Criptografar</button>
+                    <button type="button" class="button__decriptografar button__animation"
+                        onclick="deCriptografarTexto()">Descriptografar</button>
+                </div>
 
             </div>
 
@@ -38,18 +47,36 @@
             <!-- elementos onde aparece o resultado da codificação e mensagem informativa sobre o estado de
             da codificação -->
             <div class="container__img__text_info">
+                <div class="exibir__texto">
+                    <h1 id="textRetornado">
 
-                <img src="./assets/High quality products 1 1.png" alt="imagem do elemento onde se visualiza o resultado do codificação">
-               <div class="container__text__info">
-                <p class="text_enfhasis">Nenhuma mensagem <br> encontrada</p>
-                <p class="text_smaller"> Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+                    </h1>
+                </div>
 
-               </div>
+                <div class="container_img_text">
+                    <img class="cantainer__img__result_img" src="./assets/High quality products 1 1.png"
+                        alt="imagem do elemento onde se visualiza o resultado do codificação">
+
+                    <div class="container__text__info">
+                        <p class="text_enfhasis">Nenhuma mensagem encontrada</p>
+                        <p class="text_smaller"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+                    </div>
+                </div>
+
+                <div class="container__button_copiar">
+                    <button type="button" class="button__copiar button__animation " id="copiar"
+                        onclick="copiarCriptografadoDecriptografado()">Copiar</button>
+                </div>
+
             </div>
         </aside>
     </main>
-    <footer></footer>
+    <footer>
 
+    </footer>
+
+    <script src="./js/app.js" defer></script>
 
 
 </body>
