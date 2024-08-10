@@ -48,5 +48,7 @@ O **Decodificador** é uma aplicação simples, mas poderosa, que demonstra a ap
 ![imagem demostrando um texto sendo descriptografado](https://github.com/Jairo-GitHub-Principal/oracle-one-decodificador/blob/master/assets/img_decriptografando2.jpg?raw=true)
 
 
+### Acesse o decodificador nesse link: https://oracle-one-decodificador.vercel.app/
+
 
 Este projeto reflete o conhecimento adquirido em **HTML**, **CSS** e **JavaScript** e destaca a capacidade de criar uma aplicação funcional e útil com essas tecnologias.
