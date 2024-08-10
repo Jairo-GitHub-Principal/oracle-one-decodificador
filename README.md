@@ -36,6 +36,17 @@ O **Decodificador** é uma aplicação simples, mas poderosa, que demonstra a ap
 
 ## interface da aplicação:
 
+### imagem sem nunhuma interação:
+![imagem sem nunhuma interação:](https://github.com/Jairo-GitHub-Principal/oracle-one-decodificador/blob/master/assets/img_sem_interation.jpg?raw=true)
+
+### imagem demostrando um texto sendo criptografado
+
+![imagem demostrando um texto sendo criptografado](https://github.com/Jairo-GitHub-Principal/oracle-one-decodificador/blob/master/assets/img_criptografando2.jpg?raw=true)
+
+### imagem demostrando um texto sendo descriptografado
+
+![imagem demostrando um texto sendo descriptografado](https://github.com/Jairo-GitHub-Principal/oracle-one-decodificador/blob/master/assets/img_decriptografando2.jpg?raw=true)
+
 
 
 Este projeto reflete o conhecimento adquirido em **HTML**, **CSS** e **JavaScript** e destaca a capacidade de criar uma aplicação funcional e útil com essas tecnologias.
